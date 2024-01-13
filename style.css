@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: var(--squid);
+}
+:root{
+    --squid: #0e0e0e;
+    --greysquid: #9A9A9A;
+}
+@font-face {
+    font-family: Neue-Montreal-Reg;
+    src: url(font/NeueMontreal-Regular.otf);
+}
+@font-face {
+    font-family: Neue-Montreal-Med;
+    src: url(font/NeueMontreal-Medium.otf);
+}
+@font-face {
+    font-family: Neue-Montreal-Bold;
+    src: url(font/NeueMontreal-Bold.otf);
+}
+body{
+    font-family: Neue Montreal;
+}
+.thehead{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+    transition: ease-in 0.8s;
+}
+.thehead .logo{
+    font-size: 3rem;
+    
+}
+.thehead .logo a{
+    color: #9A9A9A;
+}
+.thehead .navbar .listofbutton{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+.thehead .navbar .listofbutton li{
+    width:max-content;
+    padding: 20px;
+    position: relative;
+}
+.thehead .navbar .listofbutton a{
+    text-decoration: none;
+    color: #9A9A9A;
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    font-family: 'Neue-Montreal-Med', 'sans-serif';
+}
+.thehead .navbar .listofbutton a:hover{
+    color:white;
+    border-bottom: 3px solid white;
+    transition: ease-in-out 0.2s;
+}
+.submenu{
+    display: none;
+    position: absolute;
+   
+}
+.submenu ul{
+    list-style: none;
+    display: block;
+}
+#tool:hover .submenu{
+    display: block;
+    position: absolute;
+    background-color:transparent;
+    width: 150px;
+    height: 100px;
+    transition: ease-in 0.8s;
+}
+.title{
+    color: white;
+    text-align: center;
+    text-shadow: 0px 0px 80px #ffffff;
+    font-family: Neue Montreal;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.subtitle{
+    color: #9D9D9D;
+    font-family: Neue Montreal;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.addtimeperiod{
+    position: absolute;
+    border: 1px solid aliceblue; 
+    background: rgba(255, 255, 255, 0); 
+    border-radius: 18px;
+    height: 200px;
+    width: 1330px;
+    margin-top: 80px;
+    margin-left: 100px;
+}
+.addtimeperiod p{
+    color: white;
+    text-align: left;
+    text-shadow: 0px 0px 70px #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-left: 60px;
+}
+.addtimeperiod .dropdown .worldview{
+    margin-left: 25px;
+}
+.addtimeperiod .dropdown{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.dropdown{
+    display: inline-block;
+}
+.dropdown button{
+    border-radius: 55px;
+    border: 2px solid aliceblue; 
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+}
+.dropdown a{
+    display: block;
+    color: #9D9D9D;
+    text-decoration: none;
+    padding: 10px 25px;
+}
+.dropdown .country-content{
+    display: none;
+    position: absolute;
+}
+.dropdown:hover .country-content{
+    display: block;
+}
+.dropdown .state-content{
+    display: none;
+    position: absolute;
+}
+.dropdown:hover .state-content{
+    display: block;
+}
+.dropdown .city-content{
+    display: none;
+    position: absolute;
+}
+.dropdown:hover .city-content{
+    display: block;
+}
+.dropdown .startyear-content{
+    display: none;
+    position: absolute;
+}
+.dropdown:hover .startyear-content{
+    display: block;
+}
+.dropdown .endyear-content{
+    display: none;
+    position: absolute;
+}
+.dropdown:hover .endyear-content{
+    display: block;
+}
+.dropdown a:hover{
+    color:white;
+    border-bottom: 3px solid white;
+}
+.gradient{
+    border-radius: 18px;
+    border: 2px solid rgb(31, 255, 184);
+    background: rgb(0,212,255);
+    background: linear-gradient(45deg, rgba(0,212,255,1) 0%, rgba(0,0,0,1) 28%, rgba(0,0,0,1) 60%, rgba(9,121,99,1) 100%);
+    filter: drop-shadow(0px 0px 4.4px #000);
+    backdrop-filter: blur(30.25px);
+    height: 600px;
+    width: 1330px;
+    margin-top: 335px;
+    margin-left: 100px;
+    opacity: 0.3;
+}
